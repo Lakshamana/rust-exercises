@@ -6,7 +6,9 @@ fn reverse(pair: (i32, bool)) -> (bool, i32) {
     (boolean, integer)
 }
 
-fn transpose(pair: (i32, bool)) -> (bool, i)
+fn transpose(matrix: &Matrix) -> Matrix {
+    return Matrix(matrix.0, matrix.2, matrix.1, matrix.3);
+}
 
 // The following struct is for the activity.
 #[derive(Debug)]
@@ -54,6 +56,5 @@ fn main() {
     let matrix = Matrix(1.1, 1.2, 2.1, 2.2);
     println!("{:?}", matrix);
 
-    let matrix_plus_one = (matrix, 0b1101i32);
-    println!("{:?}", matrix_plus_one);
+    println!("Transpose of {:?} = {:?}", matrix, transpose(&matrix));
 }
