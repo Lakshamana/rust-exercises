@@ -6,9 +6,15 @@ fn reverse(pair: (i32, bool)) -> (bool, i32) {
     (boolean, integer)
 }
 
+// & and * works just like C++
 fn transpose(matrix: &Matrix) -> Matrix {
     return Matrix(matrix.0, matrix.2, matrix.1, matrix.3);
 }
+
+// needs to dereference like this:
+// fn transpose(matrix: *const Matrix) -> Matrix {
+//     return Matrix((*matrix).0, (*matrix).2, (*matrix).1, (*matrix).3);
+// }
 
 // The following struct is for the activity.
 #[derive(Debug)]
