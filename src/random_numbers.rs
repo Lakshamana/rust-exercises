@@ -10,5 +10,3 @@ pub fn generate_random_numbers(n: i32, min: i32, max: i32) -> Vec<i32> {
 
     return result;
 }
-
-println!("6 random numbers: {:?}", generate_random_numbers(6, 0, 10));
