@@ -1,4 +1,4 @@
 #!/bin/sh
 
 bin=`echo $1 | cut -d. -f1 | cut -d/ -f2`
-rustc $1 -o "build/$bin" && ./build/$bin
+rustc -O $1 -o "build/$bin" && ./build/$bin
