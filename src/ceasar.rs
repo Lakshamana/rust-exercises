@@ -2,7 +2,7 @@ const LIST: &str = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNPQRSTUVWXYZ012345678
 
 fn main() {
     println!("Ceasar: {}", ceasar("hola", "encipher"));
-    println!("Ceasar indentity: {}", ceasar(&ceasar("hola", "decipher"), "decipher"));
+    println!("Ceasar indentity: {}", ceasar(&ceasar("hola", "encipher"), "decipher"));
 }
 
 fn ceasar(pass: &str, mode: &str) -> String {
