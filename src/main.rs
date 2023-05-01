@@ -5,5 +5,5 @@ mod ceasar;
 mod primes;
 
 fn main() {
-    println!("6 random numbers: {:?}", random_numbers::generate_random_numbers(7, 0, 1100));
+    println!("7 random numbers: {:?}", random_numbers::generate_random_numbers(7, 0, 1100));
 }
